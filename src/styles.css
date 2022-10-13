@@ -3,10 +3,9 @@
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 body {
-  display: block;
-  margin: 60px auto;
-  max-width: 800px;
+  margin-top: 100px;
 }
 
 h1,
@@ -28,6 +27,11 @@ h3 {
   opacity: 0.7;
 }
 
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 .navigation-link {
   display: flex;
   justify-content: center;
@@ -36,12 +40,11 @@ h3 {
 
 .navigation-link a {
   margin: 20px;
+}
+.primary-link {
   padding: 20px 15px;
   border-radius: 4px;
   text-decoration: none;
-}
-
-.contact-me {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
@@ -50,22 +53,18 @@ h3 {
 .about-me {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
+  margin: 20px;
+  padding: 20px 15px;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
-.about-me-paragraphs {
-  display: flex;
-  justify-content: center;
+.about-me-paragraph {
   margin: 30px 0;
 }
 
-.about-me-paragraphs p {
+.about-me-paragraph p {
   margin: 10px;
-  padding: 20px;
-  border-radius: 4px;
-  line-height: 1.5;
-  text-align: center;
-  background-color: var(--secondary-color);
-  font-size: 18px;
 }
 
 .homepage-link {
