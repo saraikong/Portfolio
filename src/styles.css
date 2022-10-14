@@ -84,3 +84,25 @@ p {
 .email-link:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  p {
+    text-align: center;
+  }
+  .app-img {
+    display: none;
+  }
+
+  .launch-app-link {
+    display: flex;
+    justify-content: center;
+  }
+}
