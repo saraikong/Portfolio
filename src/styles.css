@@ -1,19 +1,30 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: #346357;
+  --secondary-color: #fcffc1;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --background-main: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+  --default-font-family: "Playfair Display", serif;
+  --secondary-font-family: "Poppins", sans-serif;
 }
 
 body {
   margin-top: 100px;
+  background-color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  margin: 0;
+  font-family: var(--default-font-family);
 }
 
 h1,
 h2,
 h3 {
-  text-align: center;
-  margin: 0;
-  font-family: "Playfair Display", serif;
+  color: var(--secondary-color);
 }
 
 h1 {
@@ -28,11 +39,23 @@ h3 {
   opacity: 0.7;
 }
 
+h4 {
+  font-size: 48px;
+}
+
 p {
   font-size: 18px;
   line-height: 1.5;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--secondary-font-family);
   font-weight: 400;
+}
+
+.main-background {
+  background-color: var(--primary-color);
+}
+
+.sub-section {
+  background-color: white;
 }
 
 .navigation-link,
@@ -40,7 +63,7 @@ p {
 .about-me,
 .homepage-link,
 .email-link {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--secondary-font-family);
   font-weight: 500;
 }
 
@@ -48,8 +71,6 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
 }
 
 .navigation-link a {
@@ -61,7 +82,7 @@ p {
   text-decoration: none;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--secondary-color);
 }
 
 .about-me {
@@ -71,6 +92,20 @@ p {
   padding: 20px 15px;
   border-radius: 4px;
   text-decoration: none;
+  background-color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+}
+
+.about-me:hover {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.primary-link:hover {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .about-me-paragraph {
@@ -99,12 +134,22 @@ p {
   text-decoration: underline;
 }
 
+.text-secondary-color {
+  color: var(--secondary-color) !important;
+}
+
+.nav-item:hover,
+.navbar-brand:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 576px) {
   h1 {
     font-size: 48px;
   }
 
-  h2 {
+  h2,
+  h4 {
     font-size: 36px;
   }
 
