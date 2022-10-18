@@ -138,8 +138,7 @@ p {
   color: var(--secondary-color) !important;
 }
 
-.nav-item:hover,
-.navbar-brand:hover {
+.nav-item:hover {
   text-decoration: underline;
 }
 
