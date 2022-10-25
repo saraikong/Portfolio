@@ -8,32 +8,53 @@
 }
 
 body {
+}
+.hero {
   margin-top: 100px;
   background-color: var(--primary-color);
 }
 
 h1,
 h3,
+h7,
+h8 {
+  font-family: var(--default-font-family);
+}
+h1,
+h2,
+h3,
 h4 {
   text-align: center;
   margin: 0;
-  font-family: var(--default-font-family);
 }
 
+h2,
+h5,
+h6,
+p {
+  font-family: var(--secondary-font-family);
+}
 h1,
 h2,
-h3 {
+h3,
+h8,
+.inquiry-paragraph {
   color: var(--secondary-color);
 }
 
 h1 {
   font-size: 96px;
 }
-h2 {
-  font-size: 48px;
-  text-align: center;
-  margin: 0;
-  font-family: var(--secondary-font-family);
+
+h2,
+h4,
+h7 {
+  font-size: 64px;
+}
+
+h2,
+h6,
+h8 {
   font-weight: 700;
 }
 
@@ -42,18 +63,21 @@ h3 {
   opacity: 0.7;
 }
 
-h4 {
-  font-size: 48px;
-}
-
 h5,
 p {
-  font-family: var(--secondary-font-family);
   font-weight: 400;
 }
 
 h5 {
   text-align: center;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+h8 {
+  font-size: 48px;
 }
 
 p {
@@ -73,17 +97,20 @@ p {
 .primary-link,
 .about-me,
 .homepage-link,
-.email-link {
+.email-link,
+.view-project-link {
   font-family: var(--secondary-font-family);
   font-weight: 500;
 }
 
-.navigation-link {
+.navigation-link,
+.view-project-link {
   display: flex;
-  justify-content: center;
   margin-top: 40px;
 }
-
+.navigation-link {
+  justify-content: center;
+}
 .navigation-link a {
   margin: 20px;
 }
@@ -94,6 +121,9 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: var(--secondary-color);
+}
+
+.view-project-link {
 }
 
 .about-me {
@@ -153,6 +183,10 @@ p {
   text-decoration: underline;
 }
 
+.profile-picture {
+  max-width: 560px;
+  max-height: 560px;
+}
 @media (max-width: 576px) {
   h1 {
     font-size: 48px;
