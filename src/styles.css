@@ -7,7 +7,6 @@
   --secondary-font-family: "Poppins", sans-serif;
 }
 
-
 .hero {
   margin-top: 100px;
   background-color: var(--primary-color);
@@ -15,31 +14,16 @@
 
 h1,
 h3,
-h7,
-h8 {
+.contents h1,
+.contents h4 {
   font-family: var(--default-font-family);
-}
-
-h1,
-h2,
-h3,
-h4 {
-  text-align: center;
-  margin: 0;
 }
 
 h2,
 h5,
-h6,
+.contents h2,
 p {
   font-family: var(--secondary-font-family);
-}
-h1,
-h2,
-h3,
-h8,
-.inquiry-paragraph {
-  color: var(--secondary-color);
 }
 
 h1 {
@@ -48,19 +32,18 @@ h1 {
 
 h2,
 h4,
-h7 {
+.contents h1 {
   font-size: 64px;
 }
 
 h2,
-h6,
-h8 {
+.contents h2,
+.contents h4 {
   font-weight: 700;
 }
 
 h3 {
   font-size: 24px;
-  opacity: 0.7;
 }
 
 h5,
@@ -72,11 +55,12 @@ h5 {
   text-align: center;
 }
 
-h6 {
+.contents h2 {
   font-size: 18px;
+  color: rgba(0, 0, 0);
 }
 
-h8 {
+.contents h4 {
   font-size: 48px;
 }
 
@@ -99,10 +83,11 @@ p {
 
 .secondary-font {
   font-family: var(--secondary-font-family);
-
 }
 
-
+.border-main-color {
+  background-color: var(--primary-color);
+}
 
 .navigation-link,
 .primary-link,
@@ -134,7 +119,6 @@ p {
   color: var(--secondary-color);
 }
 
-
 .about-me {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
@@ -158,14 +142,6 @@ p {
   background-color: var(--secondary-color);
 }
 
-.about-me-paragraph {
-  margin: 30px 0;
-}
-
-.about-me-paragraph p {
-  margin: 10px;
-}
-
 .homepage-link {
   display: block;
   text-align: center;
@@ -185,7 +161,7 @@ p {
 }
 
 .text-main-color {
-  color:var(--primary-color)
+  color: var(--primary-color);
 }
 
 .text-secondary-color {
@@ -200,14 +176,29 @@ p {
   max-width: 560px;
   max-height: 560px;
 }
+
+.social-links {
+  color: var(--secondary-color);
+}
+
+.social-links:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+footer a {
+  text-decoration: none;
+}
+
 @media (max-width: 700px) {
-  h1 {
+  h1,
+  .contents h1 {
     font-size: 48px;
   }
 
-h7 {
-  font-size: 48px;
-}
+  .contents h1 {
+    font-size: 48px;
+  }
 
   h2,
   h4 {
@@ -217,14 +208,16 @@ h7 {
     font-size: 18px;
   }
 
-  p, h6,  {
+  p,
+  .contents h2 {
     text-align: center;
   }
   .app-img {
     display: none;
   }
 
-  .launch-app-link, .view-project-link {
+  .launch-app-link,
+  .view-project-link {
     display: flex;
     justify-content: center;
   }
